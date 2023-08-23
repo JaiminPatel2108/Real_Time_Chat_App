@@ -12,7 +12,8 @@ const server = http.createServer(app)
 
 const io = new Server(server,{
     cors: {
-        origin: "https://splendorous-toffee-e3a460.netlify.app/",
+        // origin: "https://splendorous-toffee-e3a460.netlify.app/",
+        origin: `https://splendorous-toffee-e3a460.netlify.app/`,
         methods: ["GET","POST"],
     }
 })
