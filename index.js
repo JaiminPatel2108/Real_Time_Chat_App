@@ -6,7 +6,11 @@ import http from "http"
 import cors from "cors"
 import {Server} from "socket.io"
 
-app.use(cors())
+const corsOptions = {
+    origin: "https://splendorous-toffee-e3a460.netlify.app/",
+  };
+
+app.use(cors(corsOptions))
 
 const server = http.createServer(app)
 
